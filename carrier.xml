@@ -3,13 +3,14 @@
   <data>
 
       <record model="ir.ui.view" id="carrier_configuration_view_form">
-          <field name="model">carrier.configuration</field>
+          <field name="model">party.configuration</field>
           <field name="type">form</field>
-          <field name="name">carrier_configuration_form</field>
+          <field name="inherit" ref="party.party_configuration_view_form"/>
+          <field name="name">party_configuration_form</field>
       </record>
       <record model="ir.action.act_window" id="act_carrier_configuration_form">
           <field name="name">Configuration</field>
-          <field name="res_model">carrier.configuration</field>
+          <field name="res_model">party.configuration</field>
       </record>
       <record model="ir.action.act_window.view"
           id="act_carrier_configuration_view1">
